@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Presentatore Eventi | Beppe Braida" description="Beppe Braida come conduttore e presentatore per i tuoi eventi aziendali, serate di gala, convention e feste private.">
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container page-hero-content">
+      <span class="badge badge-accent">&#127897; Presentatore</span>
+      <h1 class="page-title">Presentazione<br />Eventi</h1>
+      <p class="page-subtitle">Un conduttore esperto e divertente per il tuo evento</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-wrap">
+      <div class="intro-text">
+        <p>
+          Devi organizzare un evento di rilevante importanza e hai bisogno di un
+          conduttore conosciuto, esperto e divertente? <strong>Beppe Braida</strong>
+          è il professionista che stai cercando!
+        </p>
+        <p>
+          Con anni di esperienza nel mondo dello spettacolo e della televisione,
+          Beppe sa come gestire ogni tipo di evento, rendendo ogni serata unica
+          e indimenticabile.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#127970;</div>
+          <h3>Eventi Aziendali</h3>
+          <p>Convention, presentazioni prodotto, cene aziendali e team building con un tocco di comicità.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127878;</div>
+          <h3>Serate di Gala</h3>
+          <p>Conduzioni eleganti e divertenti per serate benefit, premiazioni e gala dinner.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127881;</div>
+          <h3>Feste Private</h3>
+          <p>Compleanni importanti, anniversari e celebrazioni con l'energia di un vero showman.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127916;</div>
+          <h3>Festival & Sagre</h3>
+          <p>Presentazione di serate dal vivo, festival musicali ed eventi all'aperto.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128218;</div>
+          <h3>Convention</h3>
+          <p>Moderazione di congressi, panel e tavole rotonde con leggerezza e professionalità.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127775;</div>
+          <h3>Inaugurazioni</h3>
+          <p>Aperture di attività, taglio del nastro e lanci commerciali con il tocco giusto.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h3>Hai un evento in programma?</h3>
+        <p>Contattaci per avere Beppe Braida come presentatore al tuo prossimo evento!</p>
+        <a href="/contatti" class="btn btn-primary">Richiedi un preventivo &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .page-hero {
+    position: relative;
+    padding: 10rem 2rem 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 60% 40%, rgba(244, 162, 97, 0.2) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 70%, rgba(29, 53, 87, 0.3) 0%, transparent 50%),
+      var(--color-darker);
+  }
+
+  .page-hero-content { position: relative; z-index: 1; }
+
+  .page-title {
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 0.3s;
+  }
+
+  .badge-accent {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(244, 162, 97, 0.15);
+    color: var(--color-accent);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .content-wrap { max-width: 1000px; margin: 0 auto; }
+
+  .intro-text {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  .intro-text p {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text strong { color: var(--color-text-strong); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .service-card {
+    padding: 2rem;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: 20px;
+    text-align: center;
+    transition: all var(--transition);
+  }
+
+  .service-card:hover {
+    background: var(--color-card-hover);
+    transform: translateY(-6px);
+    border-color: rgba(244, 162, 97, 0.2);
+    box-shadow: 0 10px 40px var(--shadow-color);
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-card h3 {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-strong);
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .cta-box {
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(244, 162, 97, 0.1), rgba(230, 57, 70, 0.05));
+    border: 1px solid rgba(244, 162, 97, 0.15);
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .cta-box h3 {
+    font-size: 1.8rem;
+    color: var(--color-text-strong);
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-box p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero { padding: 8rem 1.5rem 3rem; }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    .service-card { padding: 1.5rem; }
+    .cta-box { padding: 2rem 1.5rem; }
+    .cta-box h3 { font-size: 1.4rem; }
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .page-hero { padding: 7rem 1rem 2rem; }
+    .intro-text p { font-size: 0.95rem; }
+    .service-icon { font-size: 2rem; }
+  }
+</style>

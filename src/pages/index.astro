@@ -1,0 +1,556 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="BEPPE BRAIDA | Sito Ufficiale">
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <p class="hero-tag">&#10024; Comico &bull; Showman &bull; Presentatore</p>
+        <h1 class="hero-title">
+          <span class="line">Ciao, sono</span>
+          <span class="line highlight">Beppe Braida</span>
+        </h1>
+        <p class="hero-description">
+          Dal palco alla televisione, porto il sorriso ovunque.
+          Benvenuti nel mio sito ufficiale!
+        </p>
+        <div class="hero-buttons">
+          <a href="/spettacolo" class="btn btn-primary">
+            &#127917; Lo Spettacolo
+          </a>
+          <a href="/contatti" class="btn btn-outline">
+            &#128233; Contattami
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame">
+          <img
+            src="https://static.wixstatic.com/media/210590_4c1f955f284a4620a7f5d682c955918f~mv2.jpg/v1/fill/w_479,h_481,al_c,lg_1,q_80,enc_avif,quality_auto/210590_4c1f955f284a4620a7f5d682c955918f~mv2.jpg"
+            alt="Beppe Braida"
+            width="479"
+            height="481"
+            loading="eager"
+          />
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scorri</span>
+      <div class="scroll-arrow">&darr;</div>
+    </div>
+  </section>
+
+  <!-- SPETTACOLO SECTION -->
+  <section class="section show-section" id="spettacolo">
+    <div class="container">
+      <div class="show-grid animate-in">
+        <div class="show-content">
+          <span class="badge">&#127908; Nuovo Spettacolo</span>
+          <h2 class="section-title">"PIANO B"</h2>
+          <p class="show-description">
+            Il nuovo spettacolo <strong>ONE MAN SHOW</strong> con Beppe Braida.
+            Uno spettacolo divertentissimo e molto coinvolgente, ideale per qualunque tipo di evento:
+            Piazze, Aziende, Eventi Privati, Sagre, Feste e molto altro!
+          </p>
+          <div class="show-features">
+            <div class="feature">
+              <span class="feature-icon">&#127917;</span>
+              <span>One Man Show</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">&#128514;</span>
+              <span>Comicità pura</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">&#127925;</span>
+              <span>Musica dal vivo</span>
+            </div>
+          </div>
+          <a href="/spettacolo" class="btn btn-primary">Scopri di più &rarr;</a>
+        </div>
+        <div class="show-image">
+          <img
+            src="https://static.wixstatic.com/media/210590_62c4954cafb84d7989c5ee6e58bb616f~mv2.png/v1/fill/w_613,h_368,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/210590_62c4954cafb84d7989c5ee6e58bb616f~mv2.png"
+            alt="Piano B - Spettacolo di Beppe Braida"
+            width="613"
+            height="368"
+            loading="lazy"
+          />
+          <div class="show-image-decoration"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESENTAZIONE EVENTI SECTION -->
+  <section class="section events-section" id="eventi">
+    <div class="container">
+      <div class="events-grid animate-in">
+        <div class="events-image">
+          <img
+            src="https://static.wixstatic.com/media/210590_6429ce261ece4d45b2cf8e095e3f6990~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/210590_6429ce261ece4d45b2cf8e095e3f6990~mv2.jpg"
+            alt="Beppe Braida presentatore eventi"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </div>
+        <div class="events-content">
+          <span class="badge badge-accent">&#127897; Presentazione Eventi</span>
+          <h2 class="section-title">Presentazione<br />Eventi</h2>
+          <p class="events-description">
+            Devi organizzare un evento di rilevante importanza e hai bisogno di un
+            conduttore conosciuto, esperto e divertente?
+            <strong>Beppe Braida</strong> è la scelta giusta!
+          </p>
+          <ul class="events-list">
+            <li>&#10004; Eventi aziendali</li>
+            <li>&#10004; Serate di gala</li>
+            <li>&#10004; Feste private</li>
+            <li>&#10004; Convention e congressi</li>
+          </ul>
+          <a href="/eventi" class="btn btn-primary">Scopri di più &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container cta-content animate-in">
+      <h2>Vuoi Beppe Braida<br />al tuo evento?</h2>
+      <p>Contattaci per informazioni su disponibilità e preventivi!</p>
+      <a href="/contatti" class="btn btn-primary btn-lg">
+        &#9993; Contattaci Ora
+      </a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 2rem 2rem;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(230, 57, 70, 0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(29, 53, 87, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 80%, rgba(244, 162, 97, 0.1) 0%, transparent 50%),
+      var(--color-dark);
+  }
+
+  .hero-particles span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(230, 57, 70, 0.3);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .hero-particles span:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+  .hero-particles span:nth-child(2) { top: 40%; left: 25%; animation-delay: 1s; animation-duration: 8s; }
+  .hero-particles span:nth-child(3) { top: 60%; left: 50%; animation-delay: 2s; }
+  .hero-particles span:nth-child(4) { top: 15%; left: 70%; animation-delay: 3s; animation-duration: 7s; }
+  .hero-particles span:nth-child(5) { top: 80%; left: 80%; animation-delay: 4s; }
+  .hero-particles span:nth-child(6) { top: 30%; left: 90%; animation-delay: 0.5s; animation-duration: 9s; }
+  .hero-particles span:nth-child(7) { top: 70%; left: 15%; animation-delay: 1.5s; }
+  .hero-particles span:nth-child(8) { top: 50%; left: 60%; animation-delay: 2.5s; animation-duration: 7s; }
+  .hero-particles span:nth-child(9) { top: 90%; left: 35%; animation-delay: 3.5s; }
+  .hero-particles span:nth-child(10) { top: 10%; left: 45%; animation-delay: 4.5s; animation-duration: 10s; }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-tag {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 0.2s;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title .line {
+    display: block;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .hero-title .line:first-child {
+    font-size: 0.5em;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-weight: 300;
+    animation-delay: 0.4s;
+  }
+
+  .hero-title .highlight {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation-delay: 0.6s;
+  }
+
+  .hero-description {
+    font-size: 1.15rem;
+    color: var(--color-text-muted);
+    max-width: 500px;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 0.8s;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 1s;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 1s ease both;
+    animation-delay: 0.5s;
+  }
+
+  .hero-image-frame {
+    position: relative;
+    width: min(380px, 70vw);
+    height: min(380px, 70vw);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    overflow: hidden;
+    border: 3px solid rgba(230, 57, 70, 0.3);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .hero-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-glow {
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle, rgba(230, 57, 70, 0.2) 0%, transparent 70%);
+    z-index: -1;
+  }
+
+  .hero-scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease both;
+    animation-delay: 1.5s;
+  }
+
+  .scroll-arrow {
+    animation: float 2s ease-in-out infinite;
+    font-size: 1.2rem;
+  }
+
+  /* ===== SHOW SECTION ===== */
+  .show-section {
+    background: var(--color-darker);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .show-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(230, 57, 70, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .show-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(230, 57, 70, 0.15);
+    color: var(--color-primary);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+  }
+
+  .badge-accent {
+    background: rgba(244, 162, 97, 0.15);
+    color: var(--color-accent);
+  }
+
+  .show-description {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .show-description strong { color: var(--color-text-strong); }
+
+  .show-features {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--color-card-bg);
+    border-radius: 12px;
+    font-size: 0.9rem;
+  }
+
+  .feature-icon { font-size: 1.3rem; }
+
+  .show-image {
+    position: relative;
+  }
+
+  .show-image img {
+    border-radius: 20px;
+    box-shadow: 0 20px 60px var(--shadow-color);
+    transition: transform var(--transition);
+  }
+
+  .show-image:hover img {
+    transform: scale(1.02);
+  }
+
+  .show-image-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--color-primary);
+    border-radius: 20px;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  /* ===== EVENTS SECTION ===== */
+  .events-section {
+    position: relative;
+  }
+
+  .events-section::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(244, 162, 97, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .events-image img {
+    border-radius: 20px;
+    box-shadow: 0 20px 60px var(--shadow-color);
+    transition: transform var(--transition);
+  }
+
+  .events-image:hover img {
+    transform: scale(1.02);
+  }
+
+  .events-description {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .events-description strong { color: var(--color-text-strong); }
+
+  .events-list {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .events-list li {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+  }
+
+  /* ===== CTA SECTION ===== */
+  .cta-section {
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #c1121f 100%);
+    opacity: 0.1;
+  }
+
+  .cta-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-content h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    color: var(--color-text-strong);
+  }
+
+  .cta-content p {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .btn-lg {
+    padding: 1.1rem 2.5rem;
+    font-size: 1.05rem;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .hero { padding: 7rem 1.5rem 3rem; }
+    .hero-content { gap: 2.5rem; }
+    .show-grid, .events-grid { gap: 2.5rem; }
+  }
+
+  @media (max-width: 768px) {
+    .hero { padding: 7rem 1rem 3rem; min-height: auto; }
+    .hero-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+    }
+    .hero-description { margin-inline: auto; }
+    .hero-buttons { justify-content: center; flex-wrap: wrap; }
+    .hero-image { order: -1; }
+    .show-grid,
+    .events-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .events-image { order: -1; }
+    .hero-scroll-indicator { display: none; }
+    .show-features { justify-content: center; }
+    .show-section::before { width: 300px; height: 300px; }
+    .events-section::before { width: 250px; height: 250px; }
+    .badge, .badge-accent { font-size: 0.75rem; }
+    .show-description, .events-description { font-size: 0.95rem; }
+    .show-image img { border-radius: 16px; }
+    .show-image-decoration { display: none; }
+    .cta-section { padding: 4rem 1rem; }
+  }
+
+  @media (max-width: 480px) {
+    .hero { padding: 6rem 1rem 2rem; }
+    .hero-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    .hero-buttons .btn { width: 100%; justify-content: center; }
+    .feature { font-size: 0.8rem; padding: 0.5rem 0.8rem; }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document.querySelectorAll('.animate-in').forEach((el) => observer.observe(el));
+</script>

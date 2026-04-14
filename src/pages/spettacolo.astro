@@ -1,0 +1,291 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Lo Spettacolo - PIANO B | Beppe Braida" description="PIANO B - Il nuovo spettacolo ONE MAN SHOW di Beppe Braida. Comicità pura per ogni tipo di evento.">
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container page-hero-content">
+      <span class="badge">&#127917; One Man Show</span>
+      <h1 class="page-title">"PIANO B"</h1>
+      <p class="page-subtitle">Il nuovo spettacolo di Beppe Braida</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-grid">
+      <div class="content-main">
+        <h2>Lo Spettacolo</h2>
+        <p>
+          <strong>"PIANO B"</strong> è il nuovo spettacolo <em>ONE MAN SHOW</em> di Beppe Braida.
+          Uno show divertentissimo e molto coinvolgente, ricco di sketch comici,
+          imitazioni, gag esilaranti e momenti di interazione con il pubblico.
+        </p>
+        <p>
+          Lo spettacolo è ideale per qualunque tipo di evento: piazze, aziende,
+          eventi privati, sagre, feste e molto altro. Beppe Braida sa come
+          intrattenere e far ridere qualunque tipo di pubblico!
+        </p>
+
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-card-icon">&#127917;</div>
+            <h3>One Man Show</h3>
+            <p>Uno spettacolo completo con un artista a 360 gradi</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">&#128514;</div>
+            <h3>Comicità Pura</h3>
+            <p>Risate assicurate dall'inizio alla fine dello show</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">&#127925;</div>
+            <h3>Musica Live</h3>
+            <p>Momenti musicali che coinvolgono tutto il pubblico</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-icon">&#127911;</div>
+            <h3>Interazione</h3>
+            <p>Il pubblico diventa parte integrante dello spettacolo</p>
+          </div>
+        </div>
+
+        <h2>Per chi è lo spettacolo?</h2>
+        <ul class="check-list">
+          <li>&#10004; Feste di piazza e sagre</li>
+          <li>&#10004; Eventi aziendali e team building</li>
+          <li>&#10004; Cene di gala e cerimonie</li>
+          <li>&#10004; Feste private e compleanni</li>
+          <li>&#10004; Teatri e locali</li>
+          <li>&#10004; Festival ed eventi estivi</li>
+        </ul>
+
+        <div class="cta-box">
+          <h3>Vuoi "PIANO B" al tuo evento?</h3>
+          <p>Contattaci per informazioni su disponibilità e preventivi!</p>
+          <a href="/contatti" class="btn btn-primary">Richiedi informazioni &rarr;</a>
+        </div>
+      </div>
+
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <img
+            src="https://static.wixstatic.com/media/210590_62c4954cafb84d7989c5ee6e58bb616f~mv2.png/v1/fill/w_613,h_368,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/210590_62c4954cafb84d7989c5ee6e58bb616f~mv2.png"
+            alt="Piano B - Beppe Braida"
+            loading="lazy"
+          />
+        </div>
+        <div class="sidebar-card">
+          <img
+            src="https://static.wixstatic.com/media/210590_4d1504164322456ca664230e2860ad5b~mv2.png/v1/fill/w_306,h_368,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/210590_4d1504164322456ca664230e2860ad5b~mv2.png"
+            alt="Beppe Braida locandina"
+            loading="lazy"
+          />
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .page-hero {
+    position: relative;
+    padding: 10rem 2rem 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 50%, rgba(230, 57, 70, 0.2) 0%, transparent 60%),
+      radial-gradient(ellipse at 70% 30%, rgba(29, 53, 87, 0.3) 0%, transparent 50%),
+      var(--color-darker);
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-title {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 0.3s;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(230, 57, 70, 0.15);
+    color: var(--color-primary);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 0.1s;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .content-main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-strong);
+  }
+
+  .content-main h2:not(:first-child) {
+    margin-top: 3rem;
+  }
+
+  .content-main p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-main strong { color: var(--color-text-strong); }
+
+  .feature-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: 16px;
+    transition: all var(--transition);
+  }
+
+  .feature-card:hover {
+    background: var(--color-card-hover);
+    transform: translateY(-4px);
+    border-color: rgba(230, 57, 70, 0.2);
+  }
+
+  .feature-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .feature-card h3 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-strong);
+    margin-bottom: 0.4rem;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1.5rem 0 3rem;
+  }
+
+  .check-list li {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    background: var(--color-card-bg);
+    border-radius: 10px;
+    transition: background var(--transition);
+  }
+
+  .check-list li:hover {
+    background: var(--color-card-hover);
+  }
+
+  .cta-box {
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(230, 57, 70, 0.1), rgba(244, 162, 97, 0.05));
+    border: 1px solid rgba(230, 57, 70, 0.15);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .cta-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-strong);
+  }
+
+  .cta-box p {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .sidebar-card {
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px var(--shadow-color);
+  }
+
+  .sidebar-card img {
+    width: 100%;
+    transition: transform var(--transition);
+  }
+
+  .sidebar-card:hover img {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 900px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+    .content-sidebar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .sidebar-card { margin-bottom: 0; }
+  }
+
+  @media (max-width: 768px) {
+    .page-hero { padding: 8rem 1.5rem 3rem; }
+    .feature-cards {
+      grid-template-columns: 1fr;
+    }
+    .cta-box { padding: 1.5rem; }
+    .content-sidebar { grid-template-columns: 1fr; }
+    .sidebar-card { margin-bottom: 1rem; }
+  }
+
+  @media (max-width: 480px) {
+    .page-hero { padding: 7rem 1rem 2rem; }
+    .content-main h2 { font-size: 1.5rem; }
+    .cta-box h3 { font-size: 1.2rem; }
+  }
+</style>

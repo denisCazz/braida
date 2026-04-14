@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Foto | Beppe Braida" description="Galleria fotografica di Beppe Braida - Momenti dagli spettacoli ed eventi.">
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container page-hero-content">
+      <span class="badge">&#128247; Gallery</span>
+      <h1 class="page-title">Foto</h1>
+      <p class="page-subtitle">Momenti indimenticabili dagli spettacoli e dagli eventi</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="photo-grid">
+        <div class="photo-card photo-large">
+          <img
+            src="https://static.wixstatic.com/media/210590_4c1f955f284a4620a7f5d682c955918f~mv2.jpg/v1/fill/w_600,h_600,al_c,q_80,enc_avif,quality_auto/210590_4c1f955f284a4620a7f5d682c955918f~mv2.jpg"
+            alt="Beppe Braida"
+            loading="lazy"
+          />
+        </div>
+        <div class="photo-card">
+          <img
+            src="https://static.wixstatic.com/media/210590_62c4954cafb84d7989c5ee6e58bb616f~mv2.png/v1/fill/w_600,h_360,al_c,q_85,enc_avif,quality_auto/210590_62c4954cafb84d7989c5ee6e58bb616f~mv2.png"
+            alt="Piano B Spettacolo"
+            loading="lazy"
+          />
+        </div>
+        <div class="photo-card">
+          <img
+            src="https://static.wixstatic.com/media/210590_6429ce261ece4d45b2cf8e095e3f6990~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,enc_avif,quality_auto/210590_6429ce261ece4d45b2cf8e095e3f6990~mv2.jpg"
+            alt="Beppe Braida eventi"
+            loading="lazy"
+          />
+        </div>
+        <div class="photo-card">
+          <img
+            src="https://static.wixstatic.com/media/210590_4d1504164322456ca664230e2860ad5b~mv2.png/v1/fill/w_400,h_480,al_c,q_85,enc_avif,quality_auto/210590_4d1504164322456ca664230e2860ad5b~mv2.png"
+            alt="Beppe Braida locandina"
+            loading="lazy"
+          />
+        </div>
+        <div class="photo-card">
+          <img
+            src="https://static.wixstatic.com/media/210590_4aed727d06134924a04dbd1b932d39c1~mv2.jpg/v1/fill/w_600,h_900,al_c,q_80,enc_avif,quality_auto/210590_4aed727d06134924a04dbd1b932d39c1~mv2.jpg"
+            alt="Beppe Braida sul palco"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <div class="more-photos">
+        <p>Vuoi vedere altre foto? Seguimi sui social!</p>
+        <div class="social-btns">
+          <a href="https://www.facebook.com/officialbeppebraida/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/beppebraida/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .page-hero {
+    position: relative;
+    padding: 10rem 2rem 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(230, 57, 70, 0.15) 0%, transparent 60%),
+      var(--color-darker);
+  }
+
+  .page-hero-content { position: relative; z-index: 1; }
+
+  .page-title {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    animation: fadeInUp 0.8s ease both;
+    animation-delay: 0.3s;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(230, 57, 70, 0.15);
+    color: var(--color-primary);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .photo-grid {
+    columns: 3;
+    column-gap: 1.5rem;
+  }
+
+  .photo-card {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .photo-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .photo-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .photo-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+
+  .photo-card:hover::after { opacity: 1; }
+
+  .more-photos {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .more-photos p {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero { padding: 8rem 1.5rem 3rem; }
+    .photo-grid { columns: 1; column-gap: 1rem; }
+    .photo-card { margin-bottom: 1rem; border-radius: 12px; }
+    .social-btns { flex-direction: column; align-items: center; }
+    .social-btns .btn { width: 100%; max-width: 280px; justify-content: center; }
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .photo-grid { columns: 2; }
+  }
+
+  @media (max-width: 480px) {
+    .page-hero { padding: 7rem 1rem 2rem; }
+    .more-photos p { font-size: 0.95rem; }
+  }
+</style>
